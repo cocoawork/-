@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="clG-rG-yer">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZm-Qj-fQJ">
+                                <rect key="frame" x="16" y="214" width="343" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Mh8-qu-SPi"/>
+                                </constraints>
+                                <state key="normal" title="Present Animation">
+                                    <color key="titleColor" red="1" green="0.28105040920000002" blue="0.69502283389999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPresentAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LCE-7h-ecg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aeb-t4-sWv">
+                                <rect key="frame" x="16" y="274" width="343" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="uGn-M2-zUF"/>
+                                </constraints>
+                                <state key="normal" title="Push Animation">
+                                    <color key="titleColor" red="0.092052068980190138" green="0.81214042862127089" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPushAnimation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S6n-R4-i5m"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Aeb-t4-sWv" secondAttribute="trailing" constant="16" id="N0e-gZ-d4W"/>
+                            <constraint firstAttribute="trailing" secondItem="IZm-Qj-fQJ" secondAttribute="trailing" constant="16" id="RyU-JJ-Ofi"/>
+                            <constraint firstItem="Aeb-t4-sWv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="TpI-Az-8a2"/>
+                            <constraint firstItem="Aeb-t4-sWv" firstAttribute="top" secondItem="IZm-Qj-fQJ" secondAttribute="bottom" constant="20" id="dsj-nJ-e3G"/>
+                            <constraint firstItem="IZm-Qj-fQJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="150" id="fk3-ZV-KqU"/>
+                            <constraint firstItem="IZm-Qj-fQJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="uHh-Rr-uWo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gei-A0-hj6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="932" y="777.66116941529242"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="pHD-aI-sck">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="clG-rG-yer" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yUy-XS-XZN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jzo-jd-tUd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0P4-Lv-CnY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="308" y="777.66116941529242"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="0Ij-cM-Ncn">
+            <objects>
+                <viewController storyboardIdentifier="ViewController2" id="EgS-H2-qCi" customClass="ViewController2" customModule="AnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="S3v-cR-aot"/>
+                        <viewControllerLayoutGuide type="bottom" id="ors-FN-PSU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wuQ-2b-UT1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Present Animation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ktX-Hl-DtJ">
+                                <rect key="frame" x="0.0" y="120" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="BSP-LI-emp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.28105040920000002" blue="0.69502283389999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7nX-Ig-2Cs">
+                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                                <color key="backgroundColor" red="0.76268664210000003" green="1" blue="0.59697187370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="iEj-Qf-YxU"/>
+                                </constraints>
+                                <state key="normal" title="Dismiss Animation">
+                                    <color key="titleColor" red="1" green="0.28105040920000002" blue="0.69502283389999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startDismissAnimation:" destination="EgS-H2-qCi" eventType="touchUpInside" id="bwd-j4-hw2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.65477849899999996" green="0.9456066219" blue="0.9524166127" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ors-FN-PSU" firstAttribute="top" secondItem="7nX-Ig-2Cs" secondAttribute="bottom" id="0Xw-eA-REA"/>
+                            <constraint firstItem="ktX-Hl-DtJ" firstAttribute="leading" secondItem="wuQ-2b-UT1" secondAttribute="leading" id="3oW-yb-eup"/>
+                            <constraint firstAttribute="trailing" secondItem="7nX-Ig-2Cs" secondAttribute="trailing" id="901-xT-zCl"/>
+                            <constraint firstItem="7nX-Ig-2Cs" firstAttribute="leading" secondItem="wuQ-2b-UT1" secondAttribute="leading" id="Hu6-QJ-m6a"/>
+                            <constraint firstItem="ktX-Hl-DtJ" firstAttribute="top" secondItem="S3v-cR-aot" secondAttribute="bottom" constant="100" id="Jw1-nc-4WI"/>
+                            <constraint firstAttribute="trailing" secondItem="ktX-Hl-DtJ" secondAttribute="trailing" id="jE0-nb-CHY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KhC-QY-5hF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="308" y="1435.2323838080961"/>
+        </scene>
+        <!--View Controller3-->
+        <scene sceneID="9xu-kd-jhL">
+            <objects>
+                <viewController storyboardIdentifier="ViewController3" id="hO5-IY-inU" customClass="ViewController3" customModule="AnimationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qu2-6Z-VN9"/>
+                        <viewControllerLayoutGuide type="bottom" id="H34-SO-tFS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dys-ul-dFV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Push Animation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="knd-Gn-ztU">
+                                <rect key="frame" x="0.0" y="120" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2sp-4t-dqP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.092052068979999999" green="0.81214042860000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5I-dl-HPJ">
+                                <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                                <color key="backgroundColor" red="0.76268664210000003" green="1" blue="0.59697187370000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="915-1A-G2x"/>
+                                </constraints>
+                                <state key="normal" title="Pop Animation">
+                                    <color key="titleColor" red="0.092052068979999999" green="0.81214042860000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPopAnimation:" destination="hO5-IY-inU" eventType="touchUpInside" id="Qtk-oo-OxS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95686274510000002" green="0.84482232612755692" blue="0.17390564517109608" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="P5I-dl-HPJ" firstAttribute="leading" secondItem="dys-ul-dFV" secondAttribute="leading" id="A2t-FC-WqT"/>
+                            <constraint firstItem="knd-Gn-ztU" firstAttribute="top" secondItem="qu2-6Z-VN9" secondAttribute="bottom" constant="100" id="Nhl-IO-Sgm"/>
+                            <constraint firstItem="knd-Gn-ztU" firstAttribute="leading" secondItem="dys-ul-dFV" secondAttribute="leading" id="O2C-aY-9gU"/>
+                            <constraint firstItem="H34-SO-tFS" firstAttribute="top" secondItem="P5I-dl-HPJ" secondAttribute="bottom" id="bNj-SA-3Qi"/>
+                            <constraint firstAttribute="trailing" secondItem="P5I-dl-HPJ" secondAttribute="trailing" id="eQ3-GK-H22"/>
+                            <constraint firstAttribute="trailing" secondItem="knd-Gn-ztU" secondAttribute="trailing" id="rAu-WP-hQk"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t4m-Uu-QhX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="308" y="2094.6026986506749"/>
+        </scene>
+    </scenes>
+</document>
